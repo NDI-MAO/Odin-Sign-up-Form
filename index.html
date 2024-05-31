@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sign-up, The Odin Project</title>
+</head>
+<body>
+    <div>
+        
+    </div>
+    <div class="suForm">
+        <div class="header">
+            <img src="./4441966.png" alt="logo">
+            <div class="header1">The Odin Project</div>
+            <div class="subHeader">Empowering the next generation of web developers <br>to learn together for free.</div>
+            <img src="./End.png" alt="">
+        </div>
+        <div>
+            <div class="header1">Register Here!</div>
+            <form action="#" method="post">
+               
+                <div>
+                    <div><label for="fName">Full name</label></div>
+                    <input 
+                    type="text" 
+                    pattern="^(\w\w+)\s(\w+)$"
+                    placeholder="John Doe" 
+                    required> 
+                </div>
+                <div>
+                    <div><label for="Email">Email</label></div>
+                    <input 
+                    id="email"
+                    type="email"
+                    placeholder="johndoe@example.com" required> 
+                </div>
+                <div>
+                    <div><label for="Pnumber" >Phone Number</label></div>
+                    <input 
+                    id="pNumber"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    type="tel" 
+                    placeholder="078-000-0000" 
+                    required
+                    maxlength="10"> 
+                </div>
+                <div>
+                    <div><label for="password">Password</label></div>
+                    <input
+                    id="password"
+                    required
+                    pattern="[a-z1-9]{8}"
+                    placeholder="8words keyphrase"
+                    type="password"
+                    maxlength="8"
+                  />
+                </div>
+                <div>
+
+                    <div><label for="password">Confirm Password</label></div>
+                    <input 
+                    name="password_confirm" 
+                    required
+                    pattern="[a-z1-9]{8}"
+                    type="password" 
+                    id="confirmPassword" 
+                    placeholder="8words keyphrase"
+                    oninput="check()"
+                    maxlength="8"/>
+                </div>
+                
+                <div class="register">
+                    <button type="submit">Create account</button>
+                    <p>Already have an account?<span> Sign in</p>
+                    </div>
+                </div>
+                
+            </form>
+            
+        </div>
+    </div>
+   
+</body>
+</html>
