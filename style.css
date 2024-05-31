@@ -100,7 +100,7 @@ img:nth-of-type(1){
 input{
     outline: 0;
 }
-input:valid{
+input:focus:valid{
     border-color: green;
     background-color: rgb(228, 250, 228);
 }
