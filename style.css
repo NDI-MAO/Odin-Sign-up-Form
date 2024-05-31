@@ -58,25 +58,28 @@ input{
 label{
     margin: 0 15px;
 }
-button{
+a{
     width: 280px;
     height: 30px;
     border-radius: 5px;
-    border: 0;
+    text-decoration:none;
     font-family: inherit;
     font-size: 15px;
     font-weight:500;
     background-color: rgba(15,118,110,255);
     color: white;
+    display:flex;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+
 }
 form > div{
     padding-top: 10px;
 }
-.register{
-   max-width: 280px;
-   align-items: center;
-   padding-top: 20px;
-}
+
 p{
     text-align: center;
     font-size: 12px;
